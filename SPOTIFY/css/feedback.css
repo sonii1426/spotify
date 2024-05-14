@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration:none;
+}
+.navbar{
+    display:flex;
+    height:auto;
+   /* width:100%;*/
+    width:50%;
+    background-size: cover;
+    align-items:right;
+    margin-bottom: 50%;
+    
+}
+.navbar .logo img{
+    height:60px;
+    margin:3px 20px;
+}
+.navbar ul{
+    display:flex;
+    margin-left:505px;
+    
+}
+.navbar ul li{
+    margin: 15px;
+    font-size: 25px;
+}
+.navbar ul li a{
+    display:block;
+    color:rgb(250, 248, 248);
+    padding:3px 22px;
+    border-radius:8px;
+}
+.navbar ul li a:hover{
+    color:rgba(22, 247, 153, 0.903);
+    background-color:white;
+}
+body{
+    /*background: url(../images/rupali.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    background: #0b1320;
+}
+
+.container{
+    margin-right: 200px;
+    opacity: 0.8;
+    background-color: rgb(220, 191, 247);
+    background-position: left;
+    align-items: left;
+    width: 50%;
+    color: white;
+}
+.container form{
+    margin-right: 50%;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 25px 20p;
+}
+  form h1{
+    padding: 10px 0;
+}
+form .id{
+    position: relative;
+} 
+.id i{
+    position: absolute;
+    font-size: 20px;
+    opacity: 0.6;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+form input{
+    width: 90%;
+    height: 50px;
+    margin: 4px 0;
+    border: none;
+    border: 1px solid rgb(245, 10, 10);
+    outline: none;
+    background: none;
+    padding: 5 10px;
+    padding-right: 45px;
+    font-size: 20px;
+}
+form textarea{
+    padding: 5px 15px;
+    border: 1px solid rgb(253, 11, 11);
+    background: none;
+    outline: none;
+    font-size: 20px;
+    width: 90%;
+    margin: 4px 0;
+}
+form button{
+    margin-top: 5px;
+    background: none;
+    border: 1px solid rgb(253, 11, 11);
+    color: #fff;
+    padding: 10px 0;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 3px;
+}
+form input:focus,
+form textarea:focus{
+    border: 1px solid rgba(2, 38, 9, 0.902);
+    color:#ffff;
+    transition: all 0.3s ease;
+}
+form input:focus::placeholder,
+form textarea:focus::placeholder{
+    padding-left: 4px;
+    color:rgba(2, 38, 9, 0.902);
+    transition: all 0.3s ease;
+}
+form input:focus +i{
+    color: rgb(22, 16, 16);
+    transition: all 0.3s ease;
+}

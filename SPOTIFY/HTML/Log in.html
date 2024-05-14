@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<script src="https://kit.fontawesome.com/5a4063e119.js" crossorigin="anonymous"></script>
+	<title>Login in</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../JS/login.js"></script>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<a href="Index.html"><img src="../images/flynk.png" alt="flynk"></a>
+		</div>
+		<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="aboutus.html">About</a></li>
+		<li><a href="contact us.html">Contact Us</a></li>
+		<li><a href="Log in.html">Login</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+
+	</ul>
+	</div>
+	<div id="login " class="container" action="login.php" method="post">
+		<h1>Login with flynk</h1>
+		
+		<div class="box">
+			<i class="fa fa-envelope"></i>
+			<input type="email" name="email" placeholder="enter your email" id="username">
+		</div>
+		<div class="box">
+				<i class="fa fa-key"></i>
+			<input type="password" name="password" placeholder="enter your password" id="password">
+		</div>
+		<button class="btn",onclick="validate()">Sign In</button>
+		
+	</div>
+</body>
+
+</html>

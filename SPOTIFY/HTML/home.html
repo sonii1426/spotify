@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compativle" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+
+    <title>Flynk</title>
+    <style>
+      
+    @import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box
+}
+   
+   
+   
+   
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration:none;
+}
+
+.navbar{
+    display:flex;
+    height:auto;
+    width:130%;
+    
+    align-items:right;
+    
+    
+}
+.navbar .logo img{
+    height:70px;
+    margin:3px 20px;
+}
+
+
+
+
+
+.navbar ul{
+    display:flex;
+    margin-left:525px;
+    
+}
+.navbar ul li{
+    margin: 15px;
+    font-size: 25px;
+}
+.navbar ul li a{
+    display:block;
+    color:rgb(249, 245, 245);
+    padding:3px 20px;
+    border-radius:8px;
+}
+.navbar ul li a:hover{
+    color:rgba(22, 247, 153, 0.903);
+    background-color:white;
+}
+body{
+    font-family: 'lineto-black', sans-serif;
+    color:rgba(22, 247, 153, 0.903);
+    background: #0b1320;
+    background-size:auto;
+    padding :"auto";
+    position: "fixed";
+}
+
+
+
+
+body {
+  background: #0b1320;
+  font-family: 'Muli', sans-serif
+}
+
+:focus {
+  outline: none
+}
+
+/* ==-====-===-==== */
+
+.container {
+  width: 100%;
+  height: auto
+}
+
+/*.box {
+  width: 80%;
+  height: 58px;
+  background-color: #0b1320;
+  margin: 20px auto;
+  box-shadow: 0 2px 33px rgba(0,0,0,.77)
+}*/
+
+.search-bar {
+  width: 25%;
+
+  margin: 40px auto;
+  line-height: 56px;
+  position: relative
+}
+
+input[type="text"] {
+  width: 89%;
+  height: 33px;
+  padding: 0 10px;
+  color: #000;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px 0 0 2px;
+  z-index: 2
+}
+
+input:focus {
+  border: 1.1px solid #1c62b9;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+}
+
+button {
+  position: absolute;
+  width: 11%;
+  height: 33px;
+  border: 1px solid #BEBEBE;
+  border-left: 0;
+  top: 13px;
+  right: 0;
+  border-radius: 0px 2px 2px 0;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  background-color:  #0b1320
+  z-index: 1
+}
+
+button i {
+  opacity: .5;
+  transition: all .07s ease-in-out
+}
+
+button:hover i {
+  opacity: .95
+}
+
+button:hover {
+  background-color:  #0b1320;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15),
+    inset 0 0 2px rgba(0,0,0,.05);
+  transition: all .07s ease-in-out
+}
+
+/* ==-====-===-==== */
+
+h2 {
+  color:rgba(22, 247, 153, 0.903);
+  text-transform:"rubix vinyl";
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 0 0 20px black;
+  cursor: none;
+  margin-top: 22px
+}
+.u{
+  color:#fff;
+}
+
+.main-content{
+    text-align: left;
+    margin-left: 100px;
+}
+.main-content > h1{
+    font-size: 20px;
+    transform: scaleX(1.15);
+    clear: left;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.main-content > div > div > div > h1{
+    font-size: 20px;
+    transform: scaleX(1.15);
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 4px;
+    float: none;
+    clear: none;
+    z-index: -1;
+}
+.main-content > div > div > div > p {
+    font-size: 15px;
+    transform: scaleX(1.1);
+    text-align: left;
+    white-space: normal;
+    overflow: hidden;
+    float: none;
+    margin-top: 4px;
+}
+.main-content > div{
+    float: left;
+    clear: left;
+    display: block;
+    white-space: nowrap;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    left: 0px;
+}
+.main-content > div > div{
+    clear: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(17, 16, 16);
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 7px;
+    position: relative;
+}
+.main-content > div > div > div{
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+}
+.main-content > div > div > img{
+    margin-top: 21px;
+}
+/*play button for albums*/
+.main-content > div > div > button{
+    border-radius: 50%;
+    border: none;
+    z-index: 100;
+    position: relative;
+    top: -54px;
+    right: -70px;
+    visibility: hidden;
+    
+}
+
+
+.main-content > div > div > button:focus{ /*blue highlighted outline of button does not appear when button is clicked*/
+    outline: none;
+}
+.main-content > div > div:hover button{ /* (continued) button appear when hover over album divs*/
+    visibility: visible;
+}
+.main-content > div > div > button:hover{ /* (continued) button increase in size when hovered over*/
+    transform: scale(1.07);
+    
+}
+
+/*empty space at bottom of page so content are not hidden by playbar*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+  <body>
+  
+  <div class="navbar">
+    <div class="logo">
+
+        <a href="Index.html"><img src="../images/flynk.png" alt="Spotify"></a>
+    </div>
+    <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="aboutus.html">About</a></li>
+    <li><a href="contactus.html">ContactUs</a></li>
+    <li><a href="Log in.html">Login</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+</ul>
+<ul>
+  <li><a href="feedback.html">Recently played</a></li>
+    <li><a href="feedback.html">History</a></li>
+</ul>
+</div>
+
+
+
+<h2><u>Flynk Search Bar</u></h2>
+
+<div class="container">
+  <div class="box">
+    <div class="search-bar">
+      <form>
+        <input type="text" placeholder="Search">
+      </form>
+    </div>
+  </div>
+</div>
+
+  <div class="website">
+    
+    <div class="main-content"> 
+      <h1 class="w3-center w3-jumbo w3-padding-32"><i>Trending songs</i></h1>
+<div class="w3-row w3-center w3-border w3-border-dark-grey">
+  <a href="#Bhojpuri Hitlist"><div class="w3-third w3-padding-large w3-hover-red">Bhojpuri Hitlist</div></a>
+  <a href="#Bollywood Hitlist"><div class="w3-third w3-padding-large w3-hover-red">Bollywood Hitlist</div></a>
+<a href="#best-of-artists"><div class="w3-third w3-padding-large w3-hover-red">Best of artists</div></a>
+</div>
+      <div id="Trending songs">
+        <div class="albumbackground">
+            <a href="songs.html"><img src="../images/saami.jpg" style="width: 200px; height: 200px;"></a>
+         
+          <div class="starters">
+            <p>Sunidhi Chauhan</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href="song.html"><img src="../images/antava.jpg" style="width: 200px; height: 200px;"></a>
+          <div>
+          <p>Kanika Kapoor</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href="srivalli.html"><img src="../images/srivalli.jpg" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Javed Ali</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href="who say.html"> <img src="../images/who said.jpg" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Selena Gomez</p>
+          </div>
+        <div>
+      
+        
+        </div>
+        </div>
+      </div>
+      <div id="Bollywood Hitlist">
+      <h1><i>Bollywood Hitlist</i></h1>
+     
+        <div class="albumbackground">
+          <a href="Raatan.html"> <img src="../images/raatan lambiyan.jpg" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Jubin Nautiyal,Asees Kaur</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href="Naari.html"> <img src="../images/naari.png" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>neeti mohan</p>
+
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href="badhai.html"><img src="../images/badhaai do.jpg" style="width: 200px; height: 200px;"></a>
+          <div>
+
+            <p>Nakash Aziz</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href="naja.html"><img src="../images/najaa.jpeg" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Pav Dharia & Nikhita Gandhi</p>
+          </div>
+        <div>
+        
+          <div>
+        </div>
+        
+      </div>
+        </div>
+        
+      </div>
+      <div id="best-of-artists">
+      <h1><i>Best of artists</i></h1>
+      
+        <div class="albumbackground">
+          <a href=""><img src="../images/arijit.jpg" style="width: 200px; height: 200px;"></a>
+          <div> 
+            <p>Artist</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href=""><img src="../images/badshah.jpeg" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Artist</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href=""> <img src="../images/honey.png" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Artist</p>
+          </div>
+        </div>
+        <div class="albumbackground">
+          <a href=""><img src="../images/neeti.jpeg" style="width: 200px; height: 200px;"></a>
+          <div>
+            <p>Artist</p>
+          </div>div>
+        <div>
+        
+      <div>
+    </div>
+        </div>
+        </div>
+      </div>
+      <div id="Bhojpuri Hitlist">
+      <h1><i>Bhojpuri Hitlist</i></h1>
+    
+      <div class="albumbackground">
+        <a href="arvind.html"> <img src="../images/1.png" style="width: 200px; height: 200px;"></a>
+       
+        <div>
+          <p>Arvind Akela</p>
+        </div>
+      </div>
+      <div class="albumbackground">
+        <a href="khesari.html">  <img src="../images/2.jpeg" style="width: 200px; height: 200px;"></a>
+        <div>
+        <p>Khesari lal yadav</p>
+        </div>
+      </div>
+      <div class="albumbackground">
+        <a href="pawan.html"> <img src="../images/3.png" style="width: 200px; height: 200px;">
+        <div>
+          <p>Pawan Singh</p>
+        </div>
+      </div>
+      <div class="albumbackground">
+        <a href="pawan singh.html"> <img src="../images/4.jpeg" style="width: 200px; height: 200px;">
+        <div>
+          <p>Pawan Singh</p>
+        <div>
+      <div>
+      
+      <div>
+      
+      </div>
+    </div>
+    </div>
+    
+  </div>
+ 
+</body>
+</html>

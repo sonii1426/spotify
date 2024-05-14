@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration:none;
+}
+.navbar{
+    display:flex;
+    height:auto;
+    width:100%;
+    
+    align-items:right;
+    
+}
+.navbar .logo img{
+    height:60px;
+    margin:3px 20px;
+}
+.navbar ul{
+    display:flex;
+    margin-left:525px;
+    
+}
+.navbar ul li{
+    margin: 15px;
+    font-size: 25px;
+}
+.navbar ul li a{
+    display:block;
+    color:rgb(244, 238, 238);
+    padding:3px 22px;
+    border-radius:8px;
+}
+.navbar ul li a:hover{
+    color:rgba(22, 247, 153, 0.903);
+    background-color:white;
+}
+body{
+    background: #0b1320;
+    opacity: 0.9;
+}
+
+.section{
+    width:100%;
+}
+ .section .container{
+    width:80%;
+    display: block;
+    margin:0px auto;
+    padding:50px 0px;
+ }
+ .container .title{
+     width: 100%;
+     text-align: center;
+     margin-bottom: 50px;
+     font-size: 50px;
+ }
+ .container .title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: rgb(255, 249, 249);
+
+ }
+ 
+ .content{
+     float: left;
+     width: 55%;
+ }
+ .image-section{
+     float: right;
+     width: 40%;
+ }
+ .image-section img{
+     width: 100%;
+     height: 300px;
+ }
+ .content .article h3{
+    color:rgba(22, 247, 153, 0.903);
+     font-size: 30px;
+ }
+
+
+ .container .social{
+     width: 100%;
+     clear: both;
+     margin-top: 50px;
+     text-align: center;
+     display: inline-block;
+ }
+ .container .social i{
+     color: #fff;
+     font-size: 22px;
+     letter-spacing: 20px;
+     text-align: middle;
+     justify-content: center;
+
+ }
+ .container .social i:hover{
+    color: white;
+    background-color:rgba(22, 247, 153, 0.903);
+    transition: 1s ease;
+ }
+ 
+ @media screen and( max-width :768px){
+     .container{
+         width: 80%;
+         display: block;
+         margin: auto;
+     }
+ }
